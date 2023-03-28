@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bike-test-app/static/css/main.02d7be8e.css",
+    "main.js": "/bike-test-app/static/js/main.fcd2e0fd.js",
+    "static/media/hero.png": "/bike-test-app/static/media/hero.d02c0cfe000aee71d5a9.png",
+    "static/media/logo.svg": "/bike-test-app/static/media/logo.71acf17c4eed70a0a8123249bb642b83.svg",
+    "index.html": "/bike-test-app/index.html",
+    "main.02d7be8e.css.map": "/bike-test-app/static/css/main.02d7be8e.css.map",
+    "main.fcd2e0fd.js.map": "/bike-test-app/static/js/main.fcd2e0fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02d7be8e.css",
+    "static/js/main.fcd2e0fd.js"
+  ]
+}
