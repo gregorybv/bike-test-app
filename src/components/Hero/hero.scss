@@ -1,0 +1,115 @@
+.hero {
+  padding-top: 100px;
+  position: relative;
+  z-index: 5;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+  &__items {
+    margin-left: 50px;
+    margin-bottom: 70px;
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    max-width: 480px;
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 105px;
+    line-height: 0.8;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100%;
+    animation: hero-text 1.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.3s;
+    @media (max-width: 768px) {
+      font-size: clamp(3.125rem, -1.739rem + 17.3vw, 6.563rem);
+    }
+    & span {
+      text-align: right;
+      font-size: 50px;
+      line-height: 57px;
+      animation: hero-text 1.8s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 40px;
+    animation: hero-text 2s ease-in-out 0.3s;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 33px;
+    color: #fff;
+    padding: 22px 32px;
+    background-color: #eb4c56;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    animation: hero-link 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+    &:hover {
+      background-color: #fff;
+      color: #1b1a1f;
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+      padding: 15px 32px;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: image-hero 2s ease-in-out;
+    z-index: -1;
+    @media (max-width: 768px) {
+      position: relative;
+      margin-right: -10px;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: social-link 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    & svg {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
