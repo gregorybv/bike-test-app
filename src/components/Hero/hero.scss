@@ -95,6 +95,7 @@
   &__social {
     display: flex;
     flex-direction: column;
+    color: #fff;
     gap: 20px;
     animation: social-link 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     @media (max-width: 768px) {
@@ -104,12 +105,6 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-    }
-    & svg {
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        transform: scale(1.3);
-      }
     }
   }
 }
