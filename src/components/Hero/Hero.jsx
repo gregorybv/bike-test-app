@@ -14,8 +14,15 @@ const Hero = () => {
       <div class='container'>
         <div class='hero__items'>
           <div class='hero__item'>
-            <h1 class='hero__title'>
-              LAMERE <span>cYCLES</span>
+            <h1
+              class='hero__title'
+              data-aos='fade-right'
+              data-aos-duration='2000'
+            >
+              LAMERE{" "}
+              <span data-aos='fade-right' data-aos-duration='1500'>
+                cYCLES
+              </span>
             </h1>
             <p class='hero__text'>
               We build only the best, customized to your exacting demands
@@ -25,22 +32,23 @@ const Hero = () => {
             </a>
           </div>
           <div class='hero__image'>
-            <img src={bike} alt='img' class='hero__img img' />
+            <img
+              src={bike}
+              alt='img'
+              class='hero__img img'
+              data-aos='fade-left'
+              data-aos-duration='2000'
+            />
           </div>
         </div>
         <div class='hero__social'>
-          <a href='#' class='social__link'>
-            <AiFillInstagram size={25} color={"white"} />
-          </a>
-          <a href='#' class='social__link'>
-            <AiOutlineGoogle size={25} color={"white"} />
-          </a>
-          <a href='#' class='social__link'>
-            <AiFillLinkedin size={25} color={"white"} />
-          </a>
-          <a href='#' class='social__link'>
-            <AiOutlineTwitter size={25} color={"white"} />
-          </a>
+          <AiFillInstagram size={25} color={"white"} />
+
+          <AiOutlineGoogle size={25} color={"white"} />
+
+          <AiFillLinkedin size={25} color={"white"} />
+
+          <AiOutlineTwitter size={25} color={"white"} />
         </div>
       </div>
     </section>
